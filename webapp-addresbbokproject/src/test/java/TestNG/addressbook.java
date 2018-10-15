@@ -18,8 +18,7 @@ public class addressbook {
 		chromeOptions.setBinary("/usr/bin/chromium-browser");
 		chromeOptions.addArguments("--headless");
 		desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
-		ChromeDriver chromeDriver = new ChromeDriver(options);
-		  driver = new ChromeDriver();
+		ChromeDriver driver = new ChromeDriver(options);
 		  driver.get("http://192.168.32.40:8080/addressbook");
 		  driver.manage().window().maximize();
 		  driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
